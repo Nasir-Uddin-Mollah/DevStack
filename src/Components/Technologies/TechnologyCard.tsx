@@ -67,7 +67,7 @@ const TechnologyCard = ({ technology, technologiesCart, setTechnologiesCart, isT
                 className={`btn mt-4 w-full rounded-md py-2 text-[11px] font-medium transition disabled:pointer-events-auto disabled:cursor-not-allowed ${isTechnologyAdded ? "bg-pink-50 text-pink-600 hover:bg-pink-50" : "bg-slate-950 text-white hover:bg-slate-800"}`}
                 disabled={isTechnologyAdded}
             >
-                {isTechnologyAdded ? "Added to Stack" : "Add to Stack"}
+                {isTechnologyAdded ? "✓ Added to Stack" : "Add to Stack"}
 
             </button>
         </div>

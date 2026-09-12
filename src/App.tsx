@@ -1,4 +1,4 @@
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import Home from "./Components/Home"
 import Navbar from "./Components/Navbar"
 import Technologies from "./Components/Technologies/Technologies"
@@ -18,15 +18,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <Suspense fallback={
-        <div className="container mx-auto mt-5 grid max-w-6xl gap-6 px-6 lg:grid-cols-[minmax(0,1fr)_280px] lg:px-8">
-          <div className="flex min-h-40 items-center justify-center">
-            <h1 className="text-center text-sm font-medium text-slate-400">Loading Technologies...</h1>
-          </div>
-        </div>
-      }>
-        <Technologies technologiesPromise={technologiesPromise} />
-      </Suspense>
+      <Technologies technologiesPromise={technologiesPromise} />
       <Footer />
     </>
   )

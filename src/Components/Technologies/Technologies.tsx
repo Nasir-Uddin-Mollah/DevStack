@@ -1,15 +1,13 @@
-import TechnologyCard from "./TechnologyCard";
 import type { TechnologyType } from "../../Types";
-import { use, useState } from "react";
+import { useState, Suspense } from "react";
 import TechnologiesCart from "./TechnologiesCart";
+import TechnologyGrid from "./TechnologyGrid";
 
 interface TechnologiesProps {
     technologiesPromise: Promise<TechnologyType[]>;
 }
 
 const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
-    const technologies = use(technologiesPromise);
-
     const [technologiesCart, setTechnologiesCart] = useState<TechnologyType[]>([]);
 
     return (
@@ -23,23 +21,17 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
                 </p>
             </div>
             <div className="container mx-auto mt-5 grid max-w-6xl items-start gap-6 px-6 lg:grid-cols-[minmax(0,1fr)_280px] lg:px-8">
-                <div className="grid w-full justify-items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3">
-                    {technologies.map((technology: TechnologyType) => {
-                        const isTechnologyAdded = technologiesCart.some(
-                            tech => tech.id === technology.id
-                        );
-
-                        return (
-                            <TechnologyCard
-                                key={technology.id}
-                                technology={technology}
-                                technologiesCart={technologiesCart}
-                                setTechnologiesCart={setTechnologiesCart}
-                                isTechnologyAdded={isTechnologyAdded}
-                            />
-                        )
-                    })}
-                </div>
+                <Suspense fallback={
+                    <div className="flex min-h-40 items-center justify-center">
+                        <h1 className="text-center text-sm font-medium text-slate-400">Loading Technologies...</h1>
+                    </div>
+                }>
+                    <TechnologyGrid
+                        technologiesPromise={technologiesPromise}
+                        technologiesCart={technologiesCart}
+                        setTechnologiesCart={setTechnologiesCart}
+                    />
+                </Suspense>
                 <div className="w-full lg:top-24">
                     <TechnologiesCart
                         technologiesCart={technologiesCart}
