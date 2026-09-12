@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "category": "Frontend",
+    "description": "A JavaScript library for building interactive user interfaces.",
+    "icon": "https://cdn.simpleicons.org/react",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": 2,
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "A React framework for building full-stack and production-ready web applications.",
+    "icon": "https://cdn.simpleicons.org/nextdotjs",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": 3,
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime used for building scalable server-side applications.",
+    "icon": "https://cdn.simpleicons.org/nodedotjs",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": 4,
+    "name": "Django",
+    "category": "Backend",
+    "description": "A high-level Python web framework designed for rapid and secure web development.",
+    "icon": "https://cdn.simpleicons.org/django",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": 5,
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful open-source relational database known for reliability and advanced features.",
+    "icon": "https://cdn.simpleicons.org/postgresql",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": 6,
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-oriented NoSQL database designed for flexible and scalable applications.",
+    "icon": "https://cdn.simpleicons.org/mongodb",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": 7,
+    "name": "Python",
+    "category": "Language",
+    "description": "A versatile, high-level programming language widely used in web development, automation, and data science.",
+    "icon": "https://cdn.simpleicons.org/python",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": 8,
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language that builds on JavaScript for safer application development.",
+    "icon": "https://cdn.simpleicons.org/typescript",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": 9,
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework for rapidly building custom and responsive interfaces.",
+    "icon": "https://cdn.simpleicons.org/tailwindcss",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast"
+  },
+  {
+    "id": 10,
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A containerization platform used to package applications and their dependencies consistently.",
+    "icon": "https://cdn.simpleicons.org/docker",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Containers"
+  },
+  {
+    "id": 11,
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "description": "An open-source platform for automating deployment, scaling, and management of containers.",
+    "icon": "https://cdn.simpleicons.org/kubernetes",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Containers"
+  },
+  {
+    "id": 12,
+    "name": "Git",
+    "category": "Tools",
+    "description": "A distributed version control system used to track code changes and collaborate on projects.",
+    "icon": "https://cdn.simpleicons.org/git",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": 13,
+    "name": "GitHub",
+    "category": "Tools",
+    "description": "A platform for hosting Git repositories, collaboration, code review, and project management.",
+    "icon": "https://cdn.simpleicons.org/github",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": 14,
+    "name": "Redis",
+    "category": "Database",
+    "description": "An in-memory data store commonly used for caching, sessions, queues, and real-time applications.",
+    "icon": "https://cdn.simpleicons.org/redis",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": 15,
+    "name": "GitHub Actions",
+    "category": "DevOps",
+    "description": "A CI/CD platform for automating software development workflows, testing, and deployment.",
+    "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/githubactions.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  }
+]

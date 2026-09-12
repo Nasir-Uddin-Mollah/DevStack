@@ -2,8 +2,8 @@ import Logo from '../assets/logo-text.png';
 
 const Navbar = () => {
     return (
-        <div className='border-b border-slate-200'>
-            <nav className='mx-auto grid min-h-16 max-w-6xl grid-cols-[40px_minmax(0,1fr)_auto] items-center px-3 py-3 sm:flex sm:justify-between sm:px-6 lg:min-h-20 lg:px-8 lg:py-4' aria-label='Main navigation'>
+        <div className='fixed top-0 z-50 w-full border-b border-slate-200 bg-white'>
+            <nav className='container mx-auto grid min-h-16 max-w-6xl grid-cols-[40px_minmax(0,1fr)_auto] items-center px-3 py-3 sm:flex sm:justify-between sm:px-6 lg:min-h-20 lg:px-8 lg:py-4' aria-label='Main navigation'>
                 <button
                     className='flex h-10 w-10 items-center justify-center text-slate-500 md:hidden'
                     type='button'
